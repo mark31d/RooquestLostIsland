@@ -73,7 +73,7 @@ export default function JournalScreen({navigation}) {
 
   const EmptyState = () => (
     <View style={styles.empty}>
-      <Image source={AssetRegistry.book} style={styles.emptyIcon} />
+      <Text style={styles.emptyIcon}>✎</Text>
       <Text style={styles.emptyTitle}>No entries yet</Text>
       <Text style={styles.emptyText}>
         Write down your thoughts, discoveries, and notes about the island.
@@ -257,11 +257,11 @@ const styles = StyleSheet.create({
     paddingBottom: 60,
   },
   emptyIcon: {
-    width: 80,
-    height: 80,
-    resizeMode: 'contain',
-    tintColor: Colors.gold,
-    opacity: 0.35,
+    fontSize: 64,
+    color: '#FFD86B',
+    opacity: 0.75,
+    lineHeight: 70,
+    fontWeight: '900',
   },
   emptyTitle: {
     fontSize: 20,
